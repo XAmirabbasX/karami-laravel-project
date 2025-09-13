@@ -131,7 +131,5 @@ class PaymentController extends Controller
             return view('user.payment-no-successfull', compact('order_detail'));
         }
 
-        //تست گیری
-
     }
 }
