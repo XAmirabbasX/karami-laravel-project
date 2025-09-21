@@ -39,3 +39,4 @@ Route::post('changeAddress', [ShippingController::class, 'changeAddress'])->name
 Route::get('goToPayment', [\App\Http\Controllers\User\PaymentController::class, 'goToPayment'])->name('User.goToPayment');
 Route::get('callbackUrl', [\App\Http\Controllers\User\PaymentController::class, 'callbackUrl'])->name('User.callbackUrl');
 
+Route::post('search', [\App\Http\Controllers\User\SearchController::class, 'search'])->name('User.search');

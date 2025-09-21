@@ -8,7 +8,6 @@ use App\Models\Otp;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use function Laravel\Prompts\error;
 
 class LoginControlle extends Controller
 {

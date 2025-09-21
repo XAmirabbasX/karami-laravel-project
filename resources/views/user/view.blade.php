@@ -173,7 +173,8 @@
                     <!--            Logo:end-->
 
                     <!--            Search Form:start-->
-                    <form action="javascript:void(0)" class="position-relative">
+                    <form action="{{route('User.search')}}" class="position-relative">
+                        @csrf
                         <input class="form-control border-0 fs-6 fw-normal border-radius-xl bg-gray-150"
                                type="search" placeholder="جستجو">
                         <button class="btn position-absolute" type="submit">
@@ -438,8 +439,9 @@
 
                 <!--            Search Form:start-->
                 <div class="main-search position-relative">
-                    <form action="search.html" class="position-relative">
-                        <input class="form-control border-0 border-radius-xl bg-gray-150 fs-7"
+                    <form method="post" action="{{route('User.search')}}" class="position-relative">
+                        @csrf
+                        <input name="search" class="form-control border-0 border-radius-xl bg-gray-150 fs-7"
                                type="search" placeholder="جستجو" id="mainSearchInput" autocomplete="off">
                         <button class="btn position-absolute" type="submit">
                             <i class="fab fa-sistrix fw-md fs-5 gray-500"></i>
@@ -456,7 +458,7 @@
                                 <span class="d-block">در دسته <strong>زیبایی و سلامت</strong></span>
                             </div>
                             <!--                            Search Link:start-->
-                            <a href="search.html" class="stretched-link"></a>
+                            <a href="search.blade.php" class="stretched-link"></a>
                             <!--                            Search Link:end-->
                         </div>
                         <!--                        Search Item:end-->
@@ -469,7 +471,7 @@
                                 <span class="d-block">در دسته <strong>زیبایی و سلامت</strong></span>
                             </div>
                             <!--                            Search Link:start-->
-                            <a href="search.html" class="stretched-link"></a>
+                            <a href="search.blade.php" class="stretched-link"></a>
                             <!--                            Search Link:end-->
                         </div>
                         <!--                        Search Item:end-->
@@ -500,7 +502,7 @@
                                 <i class="fa fa-arrow-left"></i>
                             </div>
                             <!--                            Search Link:start-->
-                            <a href="search.html" class="stretched-link"></a>
+                            <a href="search.blade.php" class="stretched-link"></a>
                             <!--                            Search Link:end-->
                         </div>
                         <!--                        See All Results:end-->
@@ -1165,7 +1167,9 @@
                                             </svg>
                                             <!--end::Svg Icon-->
                                             {{$category->title}}
-                                            <i class="fa fa-angle-left float-end"></i>
+                                            @if($category->children->count()>0)
+                                                <i class="fa fa-angle-left float-end"></i>
+                                            @endif
                                         </a>
                                         <!--                        Navbar Item Sub Child Wrapper:start-->
                                         <ul class="position-absolute top-0 bg-white custom-box-shadow-s-2">
@@ -1362,7 +1366,7 @@
                 <!--            Main Mobile Navbar Right:start-->
                 <div class="main-mobile-navbar-right">
                     <!--            Search Form:start-->
-                    <form action="search.html" class="position-relative">
+                    <form action="search.blade.php" class="position-relative">
                         <input class="form-control border-0 fs-6 fw-normal bg-gray-150 border-radius-xl py-2"
                                type="search" placeholder="جستجو">
                         <button class="btn position-absolute" type="submit">
