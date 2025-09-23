@@ -54,6 +54,7 @@
                                         <p class="fw-bold">
                                             {{number_format($product->price_discount ?? $product->price)}} تومان
                                         </p>
+                                        <del class="d-block real_price float-end gray-500 pe-4">{{$product->price_discount ? number_format($product->price) : ''}}</del>
                                     </div>
                                     <!--                                Product Item Price:end-->
 
