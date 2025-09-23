@@ -28,6 +28,10 @@ class SearchController extends Controller
                 $products = $products->where('price', '>=', $request->price_min)->get();
                 return view('user.search' , compact('products', 'brands'));
             }
+            if ($request->filled('price_max')) {
+                $products = $products->where('price', '<=', $request->price_max)->get();
+                return view('user.search' , compact('products', 'brands'));
+            }
             return view('user.search-not-found', compact('brands'));
         }
         if($products != null && $products->count() > 0){
