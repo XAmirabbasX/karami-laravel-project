@@ -15,7 +15,7 @@ class SearchController extends Controller
         $brands = Brand::where('status', 'active')->get();
         if($search){
             $products = $products->where('status', 'active')->whereNull('deleted_at')->where('title', 'like', '%'.$search.'%')->orWhere('description', 'like', '%'.$search.'%')->get();
-        }else{
+        }elseif($request->filled('categories') || $request->filled('brands') || $request->filled('price_min') || $request->filled('price_min') || $request->filled('price_max')){
             if ($request->filled('categories')) {
                 $products = $products->whereIn('category_id', $request->categories)->get();
             }
@@ -46,8 +46,10 @@ class SearchController extends Controller
                         $products = $products->orderBy('price', 'desc')->get();
                 }
             }
-        }
-        if($products->count() > 0){
+            if($products->count() > 0){
+                return view('user.search', compact('brands'));
+            }
+        }else{
             return view('user.search-not-found', compact('brands'));
         }
     }
