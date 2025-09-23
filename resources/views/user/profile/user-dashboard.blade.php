@@ -131,19 +131,7 @@
                                         <div class="wrapper p-3 h-100">
                                             <p class="fw-bold">آدرس پیش فرض حمل و نقل</p>
                                             <p class="mb-2">
-                                                ایران ، {{$user->address[0]->city->province->name}} , {{$user->address[0]->city->name}} , {{$user->address[0]->address}}
-                                            </p>
-                                            <p class="mb-2">
-                                                سبزوار - منطقه 3
-                                            </p>
-                                            <p class="mb-2">
-                                                فلکه نقابشک - بلوار آزادگان
-                                            </p>
-                                            <p class="mb-2">
-                                                آزادگان 19 - کوچه شهید امیری
-                                            </p>
-                                            <p class="mb-2">
-                                                پلاک 92
+                                                ایران ، {{!empty($user->address[0]) ? $user->address[0]->city->province->name . $user->address[0]->city->name . $user->address[0]->address : '----'}}
                                             </p>
                                             <div class="d-grid gap-2 mt-4">
                                                 <a href="" class="btn btn-secondary bg-gray-800 ">
