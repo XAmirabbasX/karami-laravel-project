@@ -24,6 +24,10 @@ class SearchController extends Controller
                 $products = $products->whereIn('brand_id', $request->brands)->get();
                 return view('user.search' , compact('products', 'brands'));
             }
+            if ($request->filled('price_min') && $request->filled('price_max')) {
+                $products = $products->where('price', '>=', $request->price_min)->where('price', '<=', $request->price_max)->get();
+                return view('user.search' , compact('products', 'brands'));
+            }
             if ($request->filled('price_min')) {
                 $products = $products->where('price', '>=', $request->price_min)->get();
                 return view('user.search' , compact('products', 'brands'));
