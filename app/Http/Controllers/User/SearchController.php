@@ -36,6 +36,22 @@ class SearchController extends Controller
                 $products = $products->where('price', '<=', $request->price_max)->get();
                 return view('user.search' , compact('products', 'brands'));
             }
+            if (!empty($request->sort)) {
+                switch ($request->sort){
+                    case 'new':
+                        $products = $products->orderBy('created_at', 'desc')->get();
+                        break;
+                    case 'old':
+                        $products = $products->orderBy('created_at', 'asc')->get();
+                        break;
+                    case 'cheepest':
+                        $products = $products->orderBy('price', 'asc')->get();
+                        break;
+                    case 'expensive':
+                        $products = $products->orderBy('price', 'desc')->get();
+                }
+                return view('user.search' , compact('products', 'brands'));
+            }
             return view('user.search-not-found', compact('brands'));
         }
         if($products != null && $products->count() > 0){

@@ -4,7 +4,7 @@
         <!--                    Search Filters Title:start-->
         <h3 class="fs-5 fw-bold mt-2">فیلتر ها</h3>
         <!--                    Search Filters Title:end-->
-        <form method="post" action="{{route('User.search')}}">
+        <form action="{{route('User.search')}}">
             @csrf
             <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
                 <!--                        Search Filters Item:start-->
@@ -25,7 +25,7 @@
                                         <li>
                                             <a href="">{{$itemChild->title}}</a>
                                             <label>
-                                                <input name="categories[]" value="{{$itemChild->id}}" type="checkbox" class="form-check-input">
+                                                <input {{in_array($itemChild->id, request()->categories ?? []) ? 'checked' : ''}} name="categories[]" value="{{$itemChild->id}}" type="checkbox" class="form-check-input">
                                             </label>
                                         </li>
                                     @endforeach
@@ -50,7 +50,7 @@
                                     <li>
                                         <a href="">{{$brand->title}}</a>
                                         <label>
-                                            <input value="{{$brand->id}}" name="brands[]" type="checkbox" class="form-check-input">
+                                            <input {{in_array($brand->id, request()->brands ?? []) ? 'checked' : ''}} value="{{$brand->id}}" name="brands[]" type="checkbox" class="form-check-input">
                                         </label>
                                     </li>
                                 @endforeach

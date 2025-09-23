@@ -16,10 +16,10 @@
                                     <i class="fa fa-sort-amount-down pe-1"></i>
                                     مرتب سازی:
                                 </p>
-                                <a href="{{request()->fullUrlWithoutQuery(['sort' => 'new'])}}" class="fs-8 gray-600 mx-1 text-danger">جدیدترین</a>
-                                <a href="{{request()->fullUrlWithoutQuery(['sort' => 'old'])}}" class="fs-8 gray-600 mx-1">قدیمی ترین</a>
-                                <a href="{{request()->fullUrlWithoutQuery(['sort' => 'cheepest'])}}" class="fs-8 gray-600 mx-1">ارزان ترین</a>
-                                <a href="{{request()->fullUrlWithoutQuery(['sort' => 'expensive'])}}" class="fs-8 gray-600 mx-1">گران ترین</a>
+                                <a href="{{request()->fullUrlWithQuery(['sort' => 'new'])}}" class="fs-8 gray-600 mx-1 text-danger">جدیدترین</a>
+                                <a href="{{request()->fullUrlWithQuery(['sort' => 'old'])}}" class="fs-8 gray-600 mx-1">قدیمی ترین</a>
+                                <a href="{{request()->fullUrlWithQuery(['sort' => 'cheepest'])}}" class="fs-8 gray-600 mx-1">ارزان ترین</a>
+                                <a href="{{request()->fullUrlWithQuery(['sort' => 'expensive'])}}" class="fs-8 gray-600 mx-1">گران ترین</a>
                             </div>
                             <p class="fs-8 count-of-comments">
                                 {{$products->count()}} کالا
