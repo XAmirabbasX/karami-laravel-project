@@ -39,7 +39,7 @@
 
                                     <!--                                Product Item Image:start-->
                                     <div class="product-item-img">
-                                        <img src="assets/img/laptop-1.jpg" alt="" class="img-fluid">
+                                        <img src="{{asset('assets/img/laptop-1.jpg')}}" alt="" class="img-fluid">
                                     </div>
                                     <!--                                Product Item Image:end-->
 

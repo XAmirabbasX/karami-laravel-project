@@ -1,0 +1,8 @@
+2025-09-19T17:25:28.635751Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2025-09-19T17:25:28.770959Z 0 [Warning] [MY-010097] [Server] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2025-09-19T17:25:28.771012Z 0 [System] [MY-010116] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld (mysqld 8.4.3) starting as process 9040
+2025-09-19T17:25:28.803539Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: a3158865-957d-11f0-b2bc-00fffe048d2c.
+2025-09-19T17:25:28.830144Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2025-09-19T17:25:28.842732Z 1 [ERROR] [MY-012611] [InnoDB] Operating system error number 2 in a file operation.
+2025-09-19T17:25:28.843106Z 1 [ERROR] [MY-012646] [InnoDB] File .\ibdata1: 'open' returned OS error 71. Cannot continue operation
+2025-09-19T17:25:28.843503Z 1 [ERROR] [MY-012981] [InnoDB] Cannot continue operation.

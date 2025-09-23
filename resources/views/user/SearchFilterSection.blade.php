@@ -71,12 +71,12 @@
                         <div class="accordion-body">
                             <div class="price-range d-flex justify-content-between align-items-center">
                                 <span>از</span>
-                                <input type="text" class="form-control mx-3 fs-3 text-center" value="1,300">
+                                <input type="text" name="price_min" class="form-control mx-3 fs-3 text-center">
                                 <span>تومان</span>
                             </div>
                             <div class="price-range d-flex justify-content-between align-items-center">
                                 <span>تا</span>
-                                <input type="text" class="form-control mx-3 fs-3 text-center" value="8,999">
+                                <input type="text" name="price_max" class="form-control mx-3 fs-3 text-center">
                                 <span>تومان</span>
                             </div>
                         </div>

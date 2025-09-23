@@ -1,0 +1,42 @@
+2025-09-19T18:17:07.362296Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T18:17:07.368284Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 17876
+2025-09-19T18:17:07.370110Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T18:17:07.370332Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T18:17:07.373753Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T18:17:07.374254Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2025-09-19T18:21:33.465930Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T18:21:33.471641Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 1224
+2025-09-19T18:21:33.473750Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T18:21:33.474102Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T18:21:33.476675Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T18:21:33.477121Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2025-09-19T18:24:00.123802Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T18:24:00.130024Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 17600
+2025-09-19T18:24:00.131857Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T18:24:00.132025Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T18:24:00.133828Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T18:24:00.134231Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2025-09-19T18:24:10.267395Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T18:24:10.273270Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 17868
+2025-09-19T18:24:10.274931Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T18:24:10.275073Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T18:24:10.276878Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T18:24:10.277261Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2025-09-19T18:24:13.977216Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T18:24:13.983260Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 2412
+2025-09-19T18:24:13.985081Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T18:24:13.985230Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T18:24:13.987047Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T18:24:13.987464Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2025-09-19T18:49:37.829780Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T18:49:37.835523Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 13416
+2025-09-19T18:49:37.837224Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T18:49:37.837379Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T18:49:37.839224Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T18:49:37.839639Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+2025-09-19T19:04:11.293948Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+2025-09-19T19:04:11.300389Z 0 [System] [MY-013169] [Server] C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysqld.exe (mysqld 8.4.3) initializing of server in progress as process 17728
+2025-09-19T19:04:11.302107Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2025-09-19T19:04:11.302266Z 0 [ERROR] [MY-013236] [Server] The designated data directory G:\bargshop\mysql-8.4\ is unusable. You can remove all files that the server added to it.
+2025-09-19T19:04:11.304634Z 0 [ERROR] [MY-010119] [Server] Aborting
+2025-09-19T19:04:11.305071Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
