@@ -18,23 +18,18 @@ class SearchController extends Controller
         }else{
             if ($request->filled('categories')) {
                 $products = $products->whereIn('category_id', $request->categories)->get();
-                return view('user.search' , compact('products', 'brands'));
             }
             if ($request->filled('brands')) {
                 $products = $products->whereIn('brand_id', $request->brands)->get();
-                return view('user.search' , compact('products', 'brands'));
             }
             if ($request->filled('price_min') && $request->filled('price_max')) {
                 $products = $products->where('price', '>=', $request->price_min)->where('price', '<=', $request->price_max)->get();
-                return view('user.search' , compact('products', 'brands'));
             }
             if ($request->filled('price_min')) {
                 $products = $products->where('price', '>=', $request->price_min)->get();
-                return view('user.search' , compact('products', 'brands'));
             }
             if ($request->filled('price_max')) {
                 $products = $products->where('price', '<=', $request->price_max)->get();
-                return view('user.search' , compact('products', 'brands'));
             }
             if (!empty($request->sort)) {
                 switch ($request->sort){
@@ -50,13 +45,10 @@ class SearchController extends Controller
                     case 'expensive':
                         $products = $products->orderBy('price', 'desc')->get();
                 }
-                return view('user.search' , compact('products', 'brands'));
             }
+        }
+        if($products->count() > 0){
             return view('user.search-not-found', compact('brands'));
         }
-        if($products != null && $products->count() > 0){
-            return view('user.search' , compact('products', 'brands'));
-        }
-        return view('user.search-not-found', compact('brands'));
     }
 }
