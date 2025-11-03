@@ -2690,7 +2690,6 @@
     $('#product_table').dataTable({
         responsive : true,
     })
-
     function delete_admin() {
         const admin_id = $(this).data('adminid')
         const url = $(this).data('url')

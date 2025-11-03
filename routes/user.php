@@ -1,7 +1,5 @@
 <?php
 
-
-use App\Http\Controllers\User\PaymentController;
 use App\Http\Controllers\User\ShippingController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
